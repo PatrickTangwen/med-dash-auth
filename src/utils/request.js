@@ -21,7 +21,7 @@ request.interceptors.request.use((config)=> {
 
 // processing returned data
 request.interceptors.response.use((response)=> {
-    return response
+    return response.data
   }, (error)=> {
     return Promise.reject(error)
 })

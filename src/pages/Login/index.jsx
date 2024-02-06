@@ -1,11 +1,21 @@
-import { Card } from "antd";
+import { Card, message } from "antd";
 import { Form, Input, Button, Checkbox } from "antd";
 import logo from "@/assets/dashboard_icon.svg";
+import {useDispatch} from 'react-redux'
 import "./index.scss";
+import { fetchLogin } from "@/store/modules/user";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-    const onFinish = (values)=>{
+    const dispatch = useDispatch()
+    const navigate  = useNavigate()
+    const onFinish = async (values)=>{
         console.log(values)
+        // triger async action fetchLogin
+        await dispatch(fetchLogin(values))
+        // jump to landing page
+        navigate('/')
+        message.success('success')
     }
   return (
     <div className="login">
@@ -14,7 +24,7 @@ const Login = () => {
         {/* 登录表单 */} 
         <Form onFinish={onFinish} validateTrigger="onBlur">
           <Form.Item
-            name="username"
+            name="mobile"
             rules={[
               {
                 required: true,
@@ -22,10 +32,10 @@ const Login = () => {
               },
             ]}
           >
-            <Input size="large" placeholder="请输入手机号" />
+            <Input size="large" placeholder="username" />
           </Form.Item>
           <Form.Item
-            name="password"
+            name="code"
             rules={[
               {
                 required: true,
@@ -33,7 +43,7 @@ const Login = () => {
               },
             ]}
           >
-            <Input size="large" placeholder="请输入验证码" />
+            <Input size="large" placeholder="password" />
           </Form.Item>
           <Form.Item>
             <Button type="primary" htmlType="submit" size="large" block>
