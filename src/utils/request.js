@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { getToken } from './token'
 
 
 // base URL set up
@@ -14,6 +15,11 @@ allowing for the insertion of custom configurations.
 */
 
 request.interceptors.request.use((config)=> {
+    // modify this config to take in token data
+    const token = getToken()
+    if(token){
+        config.headers.Authorization = `Bearer ${token}`
+    }
     return config
   }, (error)=> {
     return Promise.reject(error)

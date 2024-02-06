@@ -5,6 +5,7 @@ import router from './router';
 import { Provider } from 'react-redux';
 import store from './store';
 import './index.scss'
+import 'normalize.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

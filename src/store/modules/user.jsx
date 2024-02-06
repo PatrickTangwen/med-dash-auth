@@ -2,17 +2,21 @@
 
 import {createSlice} from '@reduxjs/toolkit'
 import {request} from '@/utils'
+import {setToken as _setToken, getToken} from '@/utils'
 
 const userStore = createSlice({
     name:"user",
     // data status
     initialState:{
-        token:''
+        // ask local whether it contains token
+        token: getToken() || ''
     },
     // sync modify method
     reducers:{
         setToken(state,action){
             state.token = action.payload
+            // save token locally
+            _setToken(action.payload)
         }
     }
 })
