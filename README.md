@@ -30,7 +30,7 @@ If you haven't install Node.js in your computer,please download it from the foll
 ## Instructions for Running AWS Locally
 
 1. Navigate to the repository directory: <br>
-```cd DSC180A-Quarter1-Integration```<br>
+```cd med-dash-integration```<br>
 
 2. Use the following commands to gain access to the AWS server:<br>
 ``` chmod 0400 med1.pem ``` <br>
