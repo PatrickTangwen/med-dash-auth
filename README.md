@@ -37,7 +37,7 @@ If you haven't install Node.js in your computer,please download it from the foll
 ``` ssh -i med_dash.pem ubuntu@54.214.106.120 -L xxxx:localhost:xxxx ``` <br>
 (If you are Windows user and have issue with the command above, then try to use the follwoing command)
 ```sudo ssh -i med_dash.pem ubuntu@54.214.106.120 -L xxxx:localhost:xxxx ``` <br>```
-(Make sure the file name is **"med1.pem"** with **"pem"** extension instead of other file extension)<br>
+(Make sure the file name is **"med_dash.pem"** with **"pem"** extension instead of other file extension)<br>
 You should replace **xxxx** by **<any 4-digit-number>** for both **xxxx** to avoid using the same port number.
 
 4. In the same terminal, use the following commands to connect to the Jupyter notebook:<br>
