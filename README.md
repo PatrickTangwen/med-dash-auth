@@ -2,7 +2,6 @@
 If you haven't install Node.js in your computer,please download it from the following url:<br>
 [Node.js](https://nodejs.org/en/download)
 
-### Backend
 1. Open your terminal<br> 
 2. Navigate to the main directory by typing the following command:<br>
 ```cd med-dash-integration```
