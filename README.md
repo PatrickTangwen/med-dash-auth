@@ -1,4 +1,4 @@
-## Instructions for Running the Login System Locally
+## Instructions for Running the Authentication System Locally
 If you haven't install Node.js in your computer,please download it from the following url:<br>
 [Node.js](https://nodejs.org/en/download)
 
