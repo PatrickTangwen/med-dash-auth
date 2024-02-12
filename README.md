@@ -16,13 +16,13 @@ If you haven't install Node.js in your computer,please download it from the foll
 
 ## Instructions for Running ETL File
 1. Navigate to the ETL directory by typing the following command:<br>
-```cd med-dash-integration```
-```cd vital_data_etl```
+```cd med-dash-integration```<br>
+```cd vital_data_etl```<br>
 
-2. Install any necessary packages:
+2. Install any necessary packages:<br>
 ```pip install -r requirements.txt```
 
-3. Run the run.py to download csv files from vital:
+3. Run the run.py to download csv files from vital:<br>
 ```python run.py```
 
 4. You should be able to find all csv files in folder called "vital_csvs"
