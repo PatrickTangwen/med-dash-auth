@@ -13,3 +13,9 @@ If you haven't install Node.js in your computer,please download it from the foll
 6. Copy and paste this URL into your web browser's address bar.<br>
 7. You should now be able to access and interact with the login system locally in your browser.
 8. As for now, the username and password is fixed. Please use ```13800000002``` for username and ```246810``` for the password.
+
+## Instructions for Running ETL File
+
+
+
+## Instructions for Running AWS Locally
