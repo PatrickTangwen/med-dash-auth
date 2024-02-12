@@ -33,7 +33,7 @@ If you haven't install Node.js in your computer,please download it from the foll
 ```cd med-dash-integration```<br>
 
 2. Use the following commands to gain access to the AWS server:<br>
-``` chmod 0400 med1.pem ``` <br>
+``` chmod 0400 med_dash.pem ``` <br>
 ``` ssh -i med_dash.pem ubuntu@54.214.106.120 -L xxxx:localhost:xxxx ``` <br>
 (Make sure the file name is **"med1.pem"** with **"pem"** extension instead of other file extension)<br>
 You should replace **xxxx** by **<any 4-digit-number>** for both **xxxx** to avoid using the same port number.
