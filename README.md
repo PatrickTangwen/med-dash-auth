@@ -15,8 +15,17 @@ If you haven't install Node.js in your computer,please download it from the foll
 8. As for now, the username and password is fixed. Please use ```13800000002``` for username and ```246810``` for the password.
 
 ## Instructions for Running ETL File
+1. Navigate to the ETL directory by typing the following command:<br>
+```cd med-dash-integration```
+```cd vital_data_etl```
 
+2. Install any necessary packages:
+```pip install -r requirements.txt```
 
+3. Run the run.py to download csv files from vital:
+```python run.py```
+
+4. You should be able to find all csv files in folder called "vital_csvs"
 
 ## Instructions for Running AWS Locally
 
