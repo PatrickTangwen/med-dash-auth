@@ -7,7 +7,8 @@
         "respiratory_rate", "water", "calories_active", "calories_basal",
         "distance", "floors_climbed", "steps"
     ],
-    "start_date": "2023-05-20",
-    "end_date": "2023-06-30",
-    "directory": "./vital_csvs"
+    "start_date": "2023-06-20",
+    "end_date": "2023-07-30",
+    "directory": "./vital_csvs",
+    "uri":"mongodb+srv://med-dash-deploy:passwordisGood@cluster0.ludjpq9.mongodb.net/?retryWrites=true&w=majority"
 }

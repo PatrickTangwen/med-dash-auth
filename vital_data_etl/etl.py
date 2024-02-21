@@ -51,5 +51,5 @@ def get_vital_data(auth_key, user_id, functions, start_date, end_date):
 def save_to_csv(data, directory):
     for key, value in data.items():
         final_data = pd.DataFrame([vars(item) for item in value])
-        filename = f'{directory}/dataframe_{key}.csv'
+        filename = f'{directory}/{key}.csv'
         final_data.to_csv(filename, index=False)
