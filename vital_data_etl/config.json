@@ -7,7 +7,7 @@
         "respiratory_rate", "water", "calories_active", "calories_basal",
         "distance", "floors_climbed", "steps"
     ],
-    "start_date": "2023-11-10",
-    "end_date": "2023-11-17",
+    "start_date": "2023-05-20",
+    "end_date": "2023-06-30",
     "directory": "./vital_csvs"
 }
