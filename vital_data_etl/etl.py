@@ -5,7 +5,6 @@ from vital.client import Vital
 from vital.environment import VitalEnvironment
 from datetime import datetime, timedelta
 
-from datetime import datetime, timedelta
 # currently the earilest data we can query is 2023/05/20
 def get_vital_data(auth_key, user_id, functions, start_date, end_date):
     client = Vital(api_key=auth_key, environment=VitalEnvironment.SANDBOX)
